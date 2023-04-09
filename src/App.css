@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --font-heading: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    background-color: #7DB2EE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border-radius: 10px;
+    display: flex;
+    padding: 2rem;
+}
+
+.weather_div {
+    width: 50vw;
+    height: 30rem;
+    background-color: #F3FBFE;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 2rem;
+}
+
+.weather_div>* {
+    font-family: var(--font-heading);
+}
+
+.weather_div>p {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.weather_div>p>span {
+    font-weight: 1000;
+}
+
+.cityCards_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.cityCards_container {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.cityCards_container::-webkit-scrollbar {
+    display: none;
+}
+
+.todays_weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 30vw;
+    height: 30rem;
+    background-color: #100E3B;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 2rem;
+}
+
+.searchInput {
+    display: flex;
+    max-width: fit-content;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: white;
+}
+
+.searchInput>button {
+    outline: none;
+    border: none;
+    background-color: #100E3B;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: white;
+    transition: 0.2s;
+}
+
+.searchInput>button:hover {
+    background-color: #2b269a;
+    /* opacity: 0.8; */
+}
+
+.searchInput>input {
+    border: none;
+    outline: none;
+    margin-left: 0.5rem;
+
+}
+
+.time_period_div>.selector {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.time_period_div>.selector>.selector_button {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.time_period_div>.selector>.selector_button>div {
+    height: 0.5rem;
+}
+
+.time_period_div>.selector>.selector_button>.activeTab {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50%;
+    padding: 0.3rem;
+}
+
+.city_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    min-height: 7rem;
+    min-width: 7rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.city_card:first-child {
+    margin-left: 85rem;
+}
+
+.todays_weather * {
+    font-family: var(--font-heading);
+}
+
+.todaysDate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.todays_weather .heading {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.todays_weather .temp {
+    font-size: 2rem;
+    display: flex;
+    margin: 1rem 0;
+}
+
+.todays_weather .temp>h1 {
+    margin-right: 1.5rem;
+}
+
+.todays_weather .temp>h3 {
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 0.5rem;
+}
+
+.location {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.addInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
